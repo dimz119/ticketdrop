@@ -35,6 +35,6 @@ git log --oneline --graph --all
 cat .git/refs/heads/main
 cat .git/HEAD
 
-# 브랜치를 바꾸면 HEAD만 옮겨간다
+# 브랜치를 바꾸면 HEAD가 main을 가리키고 인덱스와 작업 트리도 main 상태로 바뀐다
 git switch main
 cat .git/HEAD
