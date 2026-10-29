@@ -1,8 +1,3 @@
-# 연습 폴더와 리포
-mkdir branch-demo
-cd branch-demo
-git init -b main
-
 # A: 첫 커밋
 echo "# TicketDrop" > README.md
 git add README.md
@@ -19,6 +14,7 @@ git commit -am "C: Seat 모델"
 
 # 오늘 작업 브랜치 (main의 최신 커밋 C에서)
 git switch -c day06-seat-hold
+git checkout -b day06-seat-hold
 
 # D
 echo "def hold(seat_id): return True" > seat_service.py
